@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Gallery</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="main-wrapper">	
+		<header class="main-header">
+		</header>
+    <div class="nav">
+		<nav class="main-nav">
+			<ul>
+			  <li><a href="index.html">Home</a></li>
+			  <li class="dropdown">
+				<a href="#" class="dropbtn">Services</a>
+				<div class="dropdown-content">
+				  <a href="Grass Treatment.html">Grass Treatment</a>
+				  <a href="Cutting.html">Cutting</a>
+				  <a href="Edging.html">Edging</a>
+				  <a href= "Scarifying.html">Scarifying</a>
+				  <a href="Fertiliser.html">Fertiliser</a>
+				</div>
+			  </li>
+			  <li><a class = "active" href="Gallery.html">Gallery</a></li>
+			  <li><a href="ContactUs.html">Contact Us</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="wrap">
+    
+  <!-- Define all of the tiles: -->
+	<div class="box">
+		<div class="boxInner">
+			<img onclick="showImage1()" id="img1" src="D:\Notepad++\John\CSS Layout\img\Gallery\g1.jpg" />
+			<div class="titleBox">Butterfly</div>
+		</div>
+	</div>
+	<div class="box">
+		<div class="boxInner">
+			<img onclick="showImage2()" id="img2" src="D:\Notepad++\John\CSS Layout\img\Gallery\g2.jpg"" />
+			<div class="titleBox">An old greenhouse</div>
+		</div>
+	</div>
+	<div class="box">
+		<div class="boxInner">
+			<img onclick="showImage3()" id="img3" src="D:\Notepad++\John\CSS Layout\img\Gallery\g3.jpg" />
+			<div class="titleBox">Purple wildflowers</div>
+		</div>
+	</div>
+	<div class="box">
+		<div class="boxInner">
+			<img onclick="showImage4()" id="img4" src="D:\Notepad++\John\CSS Layout\img\Gallery\g4.jpg" />
+			<div class="titleBox">A birdfeeder</div>
+		</div>
+	</div>
+	<div class="box">
+		<div class="boxInner">
+			<img onclick="showImage5()" id="img5" src="D:\Notepad++\John\CSS Layout\img\Gallery\g5.jpg" />
+			<div class="titleBox">Crocus close-up</div>
+		</div>
+	</div>
+	<div class="box">
+		<div class="boxInner">
+			<img onclick="showImage6()" id="img6" src="D:\Notepad++\John\CSS Layout\img\Gallery\g6.jpg" />
+			<div class="titleBox">The garden shop</div>
+		</div>
+	</div>
+	<div class="box">
+		<div class="boxInner">
+			<img onclick="showImage7()" id="img7" src="D:\Notepad++\John\CSS Layout\img\Gallery\g7.jpg" />
+			<div class="titleBox">Spring daffodils</div>
+		</div>
+	</div>
+	<div class="box">
+		<div class="boxInner">
+			<img src="D:\Notepad++\John\CSS Layout\img\Gallery\g8.jpg" />
+			<div class="titleBox">Iris along the path</div>
+		</div>
+	</div>
+	<div class="box">
+		<div class="boxInner">
+			<img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/8.jpg" />
+			<div class="titleBox">The garden blueprint</div>
+		</div>
+	</div>
+	<div class="box">
+		<div class="boxInner">
+			<img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/9.jpg" />
+			<div class="titleBox">The patio</div>
+		</div>
+	</div>
+	<div class="box">
+		<div class="boxInner">
+			<img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/11.jpg" />
+			<div class="titleBox">Bumble bee collecting nectar</div>
+		</div>
+	</div>
+  <div class="box">
+    <div class="boxInner">
+      <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/12.jpg" />
+      <div class="titleBox">Winding garden path</div>
+    </div>
+  </div>
+  <!-- The Modal -->
+	<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+		<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+		<img class="modal-content" id="img01">
+	</div>
+	<script>
+	// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+//var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+
+var image1 = document.getElementById("img1");
+var image2 = document.getElementById("img2");
+var image3 = document.getElementById("img3");
+var image4 = document.getElementById("img4");
+var image5 = document.getElementById("img5");
+var image6 = document.getElementById("img6");
+var image7 = document.getElementById("img7");
+
+/*img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+}*/
+
+function showImage1(){
+	modal.style.display = "block";
+	modalImg.src = image1.src;
+}
+
+function showImage2(){
+	modal.style.display = "block";
+	modalImg.src = image2.src;
+}
+
+function showImage3(){
+	modal.style.display = "block";
+	modalImg.src = image4.src;
+}
+
+function showImage4(){
+	modal.style.display = "block";
+	modalImg.src = image4.src;
+}
+
+function showImage5(){
+	modal.style.display = "block";
+	modalImg.src = image5.src;
+}
+
+function showImage6(){
+	modal.style.display = "block";
+	modalImg.src = image6.src;
+}
+
+function showImage7(){
+	modal.style.display = "block";
+	modalImg.src = image7.src;
+}
+
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+	</script>
+</div>
+
+		<footer class="main-footer">
+			<p>&copy;2016 Lianne Mcknight</p>
+		</footer>
+	</div>
+</body>
+</html>
